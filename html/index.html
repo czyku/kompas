@@ -1,0 +1,31 @@
+<html>
+<head>
+    <style>
+        html {
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+
+    <script>
+        function handleUpdate(value)
+        {
+            try {
+                document.getElementById("placeHolder").innerHTML = value;
+            }
+            catch(e) {
+                ComarchCompass.debug("[JS] handleUpdate error "+e);
+            }
+        }
+        window.onload = function() {
+            ComarchCompass.update.connect(handleUpdate);
+        }
+    </script>
+</head>
+<body>
+    <p>
+        <h1>Witamy w aplikacji kompas</h1>
+        <div id="placeHolder">.</div>
+    </p>
+</body>
+</html>
