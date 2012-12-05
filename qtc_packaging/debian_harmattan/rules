@@ -28,7 +28,7 @@ build-stamp: configure-stamp
 
 	# Add here commands to compile the package.
 	# $(MAKE) # Uncomment this line for use without Qt Creator
-	#docbook-to-man debian/kompasss4.sgml > kompasss4.1
+	#docbook-to-man debian/projecthtml5.sgml > projecthtml5.1
 
 	touch $@
 
@@ -48,8 +48,8 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
-	# Add here commands to install the package into debian/kompasss4.
-	$(MAKE) INSTALL_ROOT="$(CURDIR)"/debian/kompasss4 install
+	# Add here commands to install the package into debian/projecthtml5.
+	$(MAKE) INSTALL_ROOT="$(CURDIR)"/debian/projecthtml5 install
 
 
 # Build architecture-independent files here.

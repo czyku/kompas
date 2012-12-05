@@ -65,6 +65,6 @@ AutoGenerateAegisFile
 
 	</request>
 
-	<for path="/opt/kompasss4/bin/kompasss4" />
+	<for path="/opt/projectHTML5/bin/projectHTML5" />
 	<for path="applauncherd-launcher::/usr/bin/applauncherd.bin" id="" />
 </aegis>

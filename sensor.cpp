@@ -50,6 +50,7 @@ void Sensor::compassUpdate()
     if(lastValue != value)
     {
         lastValue = value;
+        /*qDebug() << value;*/
         emit update(value);
     }
 
